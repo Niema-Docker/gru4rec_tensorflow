@@ -8,7 +8,7 @@ RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get install -y git && \
     git clone https://github.com/hidasib/GRU4Rec_Tensorflow_Official.git && \
     mv GRU4Rec_Tensorflow_Official /usr/local/bin/GRU4Rec_Tensorflow_Official && \
-    echo "alias gru4rec_run='python /usr/local/bin/GRU4Rec_Tensorflow_Official/run.py' >> ~/.bashrc" && \
-    echo "alias gru4rec_paropt='python /usr/local/bin/GRU4Rec_Tensorflow_Official/paropt.py' >> ~/.bashrc" && \
-    echo "alias gru4rec_tf='python /usr/local/bin/GRU4Rec_Tensorflow_Official/gru4rec_tf.py' >> ~/.bashrc" && \
+    echo "alias gru4rec_run='python /usr/local/bin/GRU4Rec_Tensorflow_Official/run.py'" >> ~/.bashrc && \
+    echo "alias gru4rec_paropt='python /usr/local/bin/GRU4Rec_Tensorflow_Official/paropt.py'" >> ~/.bashrc && \
+    echo "alias gru4rec_tf='python /usr/local/bin/GRU4Rec_Tensorflow_Official/gru4rec_tf.py'" >> ~/.bashrc && \
     rm -rf /root/.cache /tmp/*
