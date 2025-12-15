@@ -6,6 +6,7 @@ MAINTAINER Niema Moshiri <niemamoshiri@gmail.com>
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get upgrade -y && \
     DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get install -y git && \
+    pip install --no-cache-dir --upgrade joblib pandas pip && \
     git clone https://github.com/hidasib/GRU4Rec_Tensorflow_Official.git && \
     mv GRU4Rec_Tensorflow_Official /usr/local/bin/GRU4Rec_Tensorflow_Official && \
     echo "alias gru4rec_run='python /usr/local/bin/GRU4Rec_Tensorflow_Official/run.py'" >> ~/.bashrc && \
