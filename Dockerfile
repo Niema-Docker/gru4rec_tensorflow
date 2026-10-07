@@ -1,6 +1,5 @@
 # Minimal Docker image for GRU4Rec's official TensorFlow implementation using TensorFlow GPU base
 FROM tensorflow/tensorflow:latest-gpu
-MAINTAINER Niema Moshiri <niemamoshiri@gmail.com>
 
 # install GRU4Rec's official TensorFlow implementation
 RUN apt-get update && \
